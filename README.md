@@ -1,6 +1,7 @@
 ### Motivation
 
-[3Blue1Brown YouTube](https://www.youtube.com/watch?v=r6sGWTCMz2k)
+- This work was completed as the final project for the AE280 course.
+- This project implements a drawing machine inspired by the principles explained in the [3Blue1Brown YouTube](https://www.youtube.com/watch?v=r6sGWTCMz2k)
 
 ### Structure of Code
 
@@ -22,3 +23,19 @@ When you want to run the code, open this file and run it.
 
 Find the whole 'black point', which should be contained our final path. 
 The criteria for regarding some points as 'black' is '#000000' only, to make our final path clearer.
+
+- `make Path.m`
+
+Connect the given whole black points with respect to the distance.
+
+- `coeff cal.m`
+
+Calculate the each coefficients Using trapezoidal numerical integration.
+
+- `draw_obj.m`
+
+Convert the path of black points with order to the complex function with respect to time.
+
+- `F_matrix.m`
+
+Find the position of each epicycles and line, we calculate the summation of $c_n exp{2πint}$, where $0 \leq n \leq N$.
